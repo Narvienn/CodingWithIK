@@ -7,6 +7,7 @@ Dodatkowo spróbuj
 1) napisać while'a w którym będzie można dodać kolejną książkę.
 2) wyświetl listę książek z nazwą oraz listą autorów w nawiasie."""
 
+
 class Library():
     book_roster = []
     def get_books(self):
@@ -28,7 +29,7 @@ class Book():
     def get_author(self, author_name): # jw.
 # gdzieś tu musi być autor, ale jak zrobić odwołanie do klasy Author()?
 
-# stworzyć listę o nazwie library z obiektami typu Book
+# stworzyć listę z obiektami typu Book
 item1 = Book("Python for Dummies", "ISBN1234") # + autor!
 item2 = Book("Shakespeare's Collected Works", "ISBN2345")
 
