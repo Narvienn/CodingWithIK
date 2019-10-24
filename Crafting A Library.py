@@ -8,8 +8,13 @@ Dodatkowo spróbuj
 2) wyświetl listę książek z nazwą oraz listą autorów w nawiasie."""
 
 class Library():
+    book_roster = []
     def get_books(self):
-        print(" #obiekt z klasy Library, ale jak go tutaj zdefiniować")
+        print(book_roster)
+
+    def add_books(self):
+        # funkcja na dodawanie nowych rekordów, którą potem wywoła się we while'u?
+        # book_roster.append("user input??")
 
 class Author():
     def __init__(self, author_name):
@@ -23,29 +28,22 @@ class Book():
     def get_author(self, author_name): # jw.
 # gdzieś tu musi być autor, ale jak zrobić odwołanie do klasy Author()?
 
+# stworzyć listę o nazwie library z obiektami typu Book
+item1 = Book("Python for Dummies", "ISBN1234") # + autor!
+item2 = Book("Shakespeare's Collected Works", "ISBN2345")
+
+local_library = Library()
+    # gdzie jak tu stworzyć listę z item1, item2 itd.?
+
 
 # 2) wyświetlanie listy książek - nim user zechce dodać ksiażkę, musi wiedzieć co już jest
-
-print("Display the list of available books.")
+    # wywołanie funkcji get_books, ino jak/na czym
 
 
 # 1) pętla while, w której będzie się dodawać książkę
 
-answer = input("Would you like to donate a book? Y/N")
+answer = input("Would you like to donate a book to the library? Y/N")
 while answer == "Y":
-    # inputy od usera: book name, author, isbn
-    #
+    # inputy od usera vs wywołanie funkcji add_books, ale na czym i jak przekazać toto do book_roster -.-
 
-# stworzyć listę o nazwie library z obiektami typu Book
-    """"
-    book1 = {
-        "book_name": "Python for Dummies",
-        "author": "Stef Maruch",
-        "isbn": "ISBN0123"
-    }
 
-    book2 = {
-        "book_name": "nazwa_ksiazki2",
-        "author": "Some Writer2",
-        "isbn": "ISBN1234"""
-    }
