@@ -34,7 +34,7 @@ item1 = Book("Python for Dummies", "ISBN1234") # + autor!
 item2 = Book("Shakespeare's Collected Works", "ISBN2345")
 
 local_library = Library()
-    # gdzie jak tu stworzyć listę z item1, item2 itd.?
+loc_book_roster = [item1, item2]
 
 
 # 2) wyświetlanie listy książek - nim user zechce dodać ksiażkę, musi wiedzieć co już jest
