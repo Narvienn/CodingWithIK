@@ -34,12 +34,11 @@ class Book():
         self.isbn = isbn
 
     def add_author(self, name): # jw.
-# gdzieś tu musi być autor, ale jak zrobić odwołanie do klasy Author()?
 
 
 
 # stworzyć listę z obiektami typu Book
-item1 = Book("Python for Dummies", "ISBN1234") # + autor!
+item1 = Book("Python for Dummies", "ISBN1234") # + autor
 item2 = Book("Shakespeare's Collected Works", "ISBN2345")
 
 local_library = Library()
