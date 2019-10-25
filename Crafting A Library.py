@@ -9,34 +9,43 @@ Dodatkowo spróbuj
 
 
 class Library():
-    book_roster = []
-    def get_books(self):
-        print(book_roster)
+    books = None
 
-    def add_books(self):
-        # funkcja na dodawanie nowych rekordów, którą potem wywoła się we while'u?
-        # book_roster.append("user input??")
+    def __init__(self, name):
+        self.books = []
+        self.name = name
+
+    def print_books(self, books):
+        print(books)
+
+    def add_books(self, book):
+        self.books.append(book)
+
+    def get_books(self):
+        return self.books
 
 class Author():
-    def __init__(self, author_name):
-        self.author_name = author_name
+    def __init__(self, name):
+        self.name = name
 
 class Book():
-    def __init__(self, book_name, isbn):
-        self.book_name = book_name
+    def __init__(self, name, isbn):
+        self.name = name
         self.isbn = isbn
 
-    def get_author(self, author_name): # jw.
+    def add_author(self, name): # jw.
 # gdzieś tu musi być autor, ale jak zrobić odwołanie do klasy Author()?
+
+
 
 # stworzyć listę z obiektami typu Book
 item1 = Book("Python for Dummies", "ISBN1234") # + autor!
 item2 = Book("Shakespeare's Collected Works", "ISBN2345")
 
 local_library = Library()
-loc_book_roster = [item1, item2]
 
 
+""""
 # 2) wyświetlanie listy książek - nim user zechce dodać ksiażkę, musi wiedzieć co już jest
     # wywołanie funkcji get_books, ino jak/na czym
 
@@ -45,6 +54,6 @@ loc_book_roster = [item1, item2]
 
 answer = input("Would you like to donate a book to the library? Y/N")
 while answer == "Y":
-    # inputy od usera vs wywołanie funkcji add_books, ale na czym i jak przekazać toto do book_roster -.-
+    # inputy od usera vs wywołanie funkcji add_books, ale na czym i jak przekazać toto do book_roster -.-"""
 
 
