@@ -22,7 +22,7 @@ spróbuj stworzyć formularz dodawania książek np. def get_book_from_user() kt
 class Library():
     books = None
 
-    def __init__(self, name, isbn):
+    def __init__(self, name):
         self.books = []
         self.name = name
 
@@ -34,6 +34,18 @@ class Library():
 
     def get_books(self):
         return self.books
+
+# extra 1: define a method for removing a book from library by its index
+    def remove_books_by_index(self, books):
+        del books[-1]
+
+# extra 2: define a method for removing a book by its name
+    def remove_books_by_name(self, books):
+        if book in books:
+            user_input = input("Please indicate the book you'd like to remove.")
+            books.remove(user_input)
+        else:
+            print("There's no such book in our library. Try a different one.")
 
 
 class Author():
@@ -71,7 +83,7 @@ local_library = [item1, item2, item3]
 # 2) displaying books in library
 for book in local_library:
     del book[1] # 0 - name, 1 - isbn, 2 - author
-    print(book) # jak wrzucić autora w nawias...?
+    print(local_library) # jak wrzucić autora w nawias...?
 
 # 1) add a while loop in which user will have the option of adding books
 
