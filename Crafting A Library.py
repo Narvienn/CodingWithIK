@@ -22,7 +22,7 @@ spróbuj stworzyć formularz dodawania książek np. def get_book_from_user() kt
 class Library():
     books = None
 
-    def __init__(self, name):
+    def __init__(self, name, isbn):
         self.books = []
         self.name = name
 
@@ -63,16 +63,15 @@ item2 = Book("The Telling", "ISBN2345").add_author(author2)
 item3 = Book("Left Hand of Darkness", "ISBN3456").add_author(author2)
 
 
-local_library = Library("MSC Library")
-local_library.books = [item1, item2, item3]
-
+# local_library = Library("MSC Library") --> jeśli to odkomentować, pętla for głupieje...?
+local_library = [item1, item2, item3]
 
 
 # 2) displaying books in library
 
-
-
-
+for book in local_library:
+    del book[1] # 0 - name, 1 - isbn, 2 - author
+    print(book) # jak wrzucić autora w nawias...?
 
 """
 # 1) pętla while, w której będzie się dodawać książkę
