@@ -63,22 +63,18 @@ item2 = Book("The Telling", "ISBN2345").add_author(author2)
 item3 = Book("Left Hand of Darkness", "ISBN3456").add_author(author2)
 
 
-# local_library = Library("MSC Library") --> jeśli to odkomentować, pętla for głupieje...?
+# local_library = Library("MSC Library") # jeśli się odkomentuje tę linię, zmienna local_library ma flagę błędu
+# inny zapis? Library().local_library?
 local_library = [item1, item2, item3]
 
 
 # 2) displaying books in library
-
 for book in local_library:
     del book[1] # 0 - name, 1 - isbn, 2 - author
     print(book) # jak wrzucić autora w nawias...?
 
-"""
-# 1) pętla while, w której będzie się dodawać książkę
+# 1) add a while loop in which user will have the option of adding books
 
 answer = input("Would you like to donate a book to the library? Y/N")
 while answer == "Y":
-    # inputy od usera + wywołanie funkcji add_books, ale na czym i jak przekazać toto do books"""
-
-
-
+    book_name = input("Please provide the book name")
