@@ -52,20 +52,29 @@ class Book():
 
     def add_author(self, author):
         self.book.append(author)
+        return author
 
 
-item1 = Book("Python for Dummies", "ISBN1234")
-item2 = Book("Shakespeare's Collected Works", "ISBN2345")
+author1 = Author("Stef Maruch")
+author2 = Author("Ursula K. Le Guin")
+
+item1 = Book("Python for Dummies", "ISBN1234",).add_author(author1)
+item2 = Book("The Telling", "ISBN2345").add_author(author2)
+item3 = Book("Left Hand of Darkness", "ISBN3456").add_author(author2)
+
 
 local_library = Library("MSC Library")
-local_library.books = [item1, item2]
+local_library.books = [item1, item2, item3]
 
 
-""""
-# 2) wyświetlanie listy książek - nim user zechce dodać ksiażkę, musi wiedzieć co już jest
-    # wywołanie funkcji get_books, ino jak/na czym
+
+# 2) displaying books in library
 
 
+
+
+
+"""
 # 1) pętla while, w której będzie się dodawać książkę
 
 answer = input("Would you like to donate a book to the library? Y/N")
