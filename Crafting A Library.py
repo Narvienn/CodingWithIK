@@ -47,6 +47,13 @@ class Library():
         else:
             print("There's no such book in our library. Try a different one.")
 
+# extra 3: define a method for returning a book with ISBN larger than provided in the argument
+def isbn_above_1234(books):
+    for book in local_library:
+        isbn_comparison = int(book.isbn.strip("ISBN"))
+        # isbn is an alphanumeric string - 1. remove the leading "ISBN" part, 2. convert str to int for comparison
+        if isbn_comparison > 1234:
+            return book
 
 class Author():
     author = ""
