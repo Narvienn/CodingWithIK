@@ -35,6 +35,10 @@ class Library():
     def get_books(self):
         return self.books
 
+# EXTRA/while loop:
+    def get_books_from_user(self, books):
+
+
 # extra 1: define a method for removing a book from library by its index
     def remove_books_by_index(self, books):
         del books[-1]
@@ -48,8 +52,9 @@ class Library():
             print("There's no such book in our library. Try a different one.")
 
 # extra 3: define a method for returning a book with ISBN larger than provided in the argument
+# Q: how/why do I include the specific int in the argument?
 def isbn_above_1234(books):
-    for book in local_library:
+    for book in books:
         isbn_comparison = int(book.isbn.strip("ISBN"))
         # isbn is an alphanumeric string - 1. remove the leading "ISBN" part, 2. convert str to int for comparison
         if isbn_comparison > 1234:
@@ -96,4 +101,7 @@ for book in local_library:
 
 answer = input("Would you like to donate a book to the library? Y/N")
 while answer == "Y":
-    book_name = input("Please provide the book name")
+    book_name = input("Please provide the name of your book.")
+    local_library.add_book(book_name)
+    isbn_name = input("Great. Now please provide the ISBN number.")
+
