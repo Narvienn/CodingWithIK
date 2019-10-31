@@ -36,11 +36,16 @@ class Library():
         return self.books
 
 # EXTRA/while loop:
-    def get_books_from_user(self, books):
+    def get_book_from_user(self, books):
+        new_book = Book()
 
+        # 1. create a Book object ( = a list),
+        # 2. get name, isbn and author from the user,
+        # 3. append those to the book object
+        # 4. add the new_book to library
 
 # extra 1: define a method for removing a book from library by its index
-    def remove_books_by_index(self, books):
+    def remove_book_by_index(self, books):
         del books[-1]
 
 # extra 2: define a method for removing a book by its name
