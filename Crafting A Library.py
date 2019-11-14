@@ -35,7 +35,7 @@ class Library():
     def get_books(self):
         return self.books
 
-# EXTRA/while loop:
+    # EXTRA/while loop:
     def get_book_from_user(self, books):
         new_book = Book()
 
@@ -44,57 +44,106 @@ class Library():
         # 3. append those to the book object
         # 4. add the new_book to library
 
-# extra 1: define a method for removing a book from library by its index
-    def remove_book_by_index(self, books):
-        del books[-1]
+    # extra 1: define a method for removing a book from library by its index
+    def remove_book_by_index(self, index):
+        del self.books[index]
 
-# extra 2: define a method for removing a book by its name
-    def remove_books_by_name(self, books):
-        if book in books:
-            user_input = input("Please indicate the book you'd like to remove.")
-            books.remove(user_input)
-        else:
-            print("There's no such book in our library. Try a different one.")
+    # extra 2: define a method for removing a book by its name
+    def remove_book_by_name(self, name):
+        # book = Book(jakies_argumenty)
+        # self.books = [book, Book(kolejen_argumenty, "ksiazka stringiem"]
+        for book in self.books:
+            if book.name == name:
+                idx = self.books.index(book)
 
-# extra 3: define a method for returning a book with ISBN larger than provided in the argument
-# Q: how/why do I include the specific int in the argument?
-def isbn_above_1234(books):
-    for book in books:
-        isbn_comparison = int(book.isbn.strip("ISBN"))
-        # isbn is an alphanumeric string - 1. remove the leading "ISBN" part, 2. convert str to int for comparison
-        if isbn_comparison > 1234:
-            return book
+                self.remove_book_by_index(idx)
+
+        # idx = self.books.index("ksiazka stringiem")
+
+    # extra 3: define a method for returning a book with ISBN larger than provided in the argument
+    # Q: how/why do I include the specific int in the argument?
+    def get_book_by_isbn_above_number(self, isbn_number):
+        for book in self.books:
+            isbn_comparison = int(book.isbn.strip("ISBN"))
+            # isbn is an alphanumeric string - 1. remove the leading "ISBN" part, 2. convert str to int for comparison
+            if int(book.isbn.strip("ISBN")) > isbn_number
+                return book
+
 
 class Author():
-    author = ""
 
     def __init__(self, name):
         self.name = name
 
 
 class Book():
-    book = []
 
-    def __init__(self, name, isbn):
-        self.name = name
-        self.isbn = isbn
-
-    def add_author(self, author):
-        self.book.append(author)
-        return author
+    def __repr__(self):
+        return "Reprezentacja: {} {}".format(self.name, self.isbn)
 
 
-author1 = Author("Stef Maruch")
+def __init__(self, name, isbn):
+    self.name = name
+    self.isbn = isbn
+
+
+def add_author(self, author):  ####### ta zmienna jest przekazana tuuuuu
+    self.book.append(author)  ####a tu przekazana po raz 2
+    return author
+
+
+### Czyli na poczatku piszemy to co nizej >>>>
+
 author2 = Author("Ursula K. Le Guin")
 
-item1 = Book("Python for Dummies", "ISBN1234",).add_author(author1)
+item1 = Book("Python for Dummies", "ISBN1234")
+wartosc_zwracana = item1.add_author(author1)
+
+author1 = Author("Stef Maruch").  #### definicja zmiennej
+author = Book("Python for Dummies", "ISBN1234", ).add_author(author1)  ### przekazanie tej zmiennej po raz 1.
+
 item2 = Book("The Telling", "ISBN2345").add_author(author2)
 item3 = Book("Left Hand of Darkness", "ISBN3456").add_author(author2)
 
+local_library = Library("MSC Library")
+local_library.add_books(item1)
+local_library.add_books(item2)
+local_library.add_books(item3)
 
-# local_library = Library("MSC Library") # jeśli się odkomentuje tę linię, zmienna local_library ma flagę błędu
-# inny zapis? Library().local_library?
-local_library = [item1, item2, item3]
+print(local_library.get_books())
+
+for book in local_library.get_books():
+    print(book)
+    ## Wysiwelit: Reprezentacja: Python for Dummies ISBN1234
+
+local_library.print_books()
+
+# Wyswietli: ['Python for Dummies', 'bbb']
+
+local_library.remove_book_by_name("ktos")
+
+"""
+
+
+
+
+Python 2.7.16 (default, Oct 17 2019, 17:14:30)
+[GCC 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.32.4) (-macos10.15-objc-s on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> class Book():
+...    pass
+...
+>>>
+>>>
+>>> print([Book(), Book()])
+[<__main__.Book instance at 0x1051d9878>, <__main__.Book instance at 0x1051d98c0>]
+
+
+"""
+
+# badz
+author_name = "some name"
+local_library.remove_book_by_name(author_name)
 
 
 # 2) displaying books in library
