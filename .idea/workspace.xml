@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd8afc47-5755-4b6d-b7b6-4d44bcc082e5" name="Default Changelist" comment="Adding 1) display books">
+    <list default="true" id="fd8afc47-5755-4b6d-b7b6-4d44bcc082e5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crafting A Library.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crafting A Library.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crafting A Library.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+            <state relative-caret-position="442">
+              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -33,11 +34,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2215" />
-    <option name="y" value="255" />
-    <option name="width" value="1546" />
-    <option name="height" value="830" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="240" />
+    <option name="y" value="128" />
+    <option name="width" value="1440" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -61,7 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Python Selenium Training" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -156,14 +157,58 @@
       <option name="project" value="LOCAL" />
       <updated>1572348546168</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Saving branch changes (extra 1 and 2) because they didn't save in library-extras">
+      <created>1572359923652</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572359923652</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Saving branch changes (extra 1 and 2) because they didn't save in library-extras">
+      <created>1572432009443</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572432009443</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Attempts at while loop + EXTRA">
+      <created>1572529435733</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572529435733</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Attempts at while loop + EXTRA v.2.">
+      <created>1572532755233</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572532755233</updated>
+    </task>
+    <task id="LOCAL-00015" summary="V.1.2 - correcting object reference &amp; testing methods">
+      <created>1573747041480</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1573747041480</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="2215" y="255" width="1546" height="830" extended-state="0" />
+    <frame x="2008" y="7" width="1548" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3143236" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22251655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -172,14 +217,14 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32998565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.1977612" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,7 +234,11 @@
     <MESSAGE value="Defining add_author" />
     <MESSAGE value="Adding authors to books" />
     <MESSAGE value="Adding 1) display books" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding 1) display books" />
+    <MESSAGE value="Saving branch changes (extra 1 and 2) because they didn't save in library-extras" />
+    <MESSAGE value="Attempts at while loop + EXTRA" />
+    <MESSAGE value="Attempts at while loop + EXTRA v.2." />
+    <MESSAGE value="V.1.2 - correcting object reference &amp; testing methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="V.1.2 - correcting object reference &amp; testing methods" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -202,8 +251,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crafting A Library.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+        <state relative-caret-position="442">
+          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
         </state>
       </provider>
     </entry>

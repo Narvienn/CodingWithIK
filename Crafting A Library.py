@@ -102,6 +102,7 @@ wartosc_zwracana = item1.add_author(author1)
 author1 = Author("Stef Maruch").  #### definicja zmiennej
 author = Book("Python for Dummies", "ISBN1234", ).add_author(author1)  ### przekazanie tej zmiennej po raz 1.
 
+# zapis błędny - nie tworzy się obiektu danej klasy równocześnie wywołując na nim metodę tej klasy
 item2 = Book("The Telling", "ISBN2345").add_author(author2)
 item3 = Book("Left Hand of Darkness", "ISBN3456").add_author(author2)
 
