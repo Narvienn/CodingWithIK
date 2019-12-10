@@ -51,29 +51,66 @@ class Library():
 
 
 class Author():
-    author = ""
 
     def __init__(self, name):
         self.name = name
 
 
 class Book():
-    book = []
+    """
+    Klasa reprezentuje książkę
 
-    def __init__(self, name, isbn):
-        self.name = name
-        self.isbn = isbn
+    Example:
 
-    def add_author(self, author):
-        self.book.append(author)
-        return author
+    book = Book("Harry Pottert", "isbn_some")
+    book.add_author(Author("First name", "last name"))
+    """
 
-    def get_books_from_user(self, book):
-        self.name = input(print("What's the book's name?"))
-        print(self.name)
-        self.book.append(self.name)
-        self.isbn = input("OK. What's the ISBN number of the book?")
-        self.book.append(self.isbn)
-        author = input("And who is the author?")
-        self.book.append(author)
-        return book
+
+def __init__(self, name, isbn):
+    self.name = name
+    self.isbn = isbn
+
+
+def add_author(self, author):
+    self.book.append(author)
+    return author
+
+
+class InputOutput():
+    def handle_operation(self):
+        book = self.get_book_from_user_input()
+
+    def get_book_from_user_input(self):
+        name = input("What's the book's name?: ")
+        isbn = input("OK. What's the ISBN number of the book?: ")
+
+        b = Book()
+
+        for author in self.get_authors_from_user_input():
+            b.add_author(author)
+
+        return b
+
+    def get_authors_from_user_input(self):
+        authors = []
+        while True:
+            op = input("Do you want to add another author? (yes/no)")
+
+            if op != "yes":
+                break
+
+            name = input("Enter author name:")
+            author = Author(name)
+            authors.append(author)
+
+        return authors
+
+
+io = InputOutput()
+io.handle_operation()
+
+# stwórz wiele bibliotek, do których dodasz książki i autorów książek (antologie!)
+
+
+
